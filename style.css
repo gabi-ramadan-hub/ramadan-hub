@@ -83,7 +83,7 @@ p{
      padding: 4px;
      margin:12px;
      width:50px;
-    margin-left: 130px;
+     margin-left: 130px;
 }
 h2{
      margin-top: 50px;
@@ -130,6 +130,7 @@ h3{
      background-color:rgb(238, 249, 245);
 
 
+
 }
 .prayer-time{
      display: flex;
@@ -149,7 +150,7 @@ h3{
 }
 .prayer-time h3 {
  
-     background-color:rgb(238, 249, 245);
+     background-color:rgb(227, 246, 239);
      border-radius: 5px;
      padding: 10px;
      margin: 10px;
@@ -222,9 +223,9 @@ h3{
 
 .btn-verse{
      display: flex;
-     gap: 40px;
+     gap: 20px;
      text-align: center;
-     margin-left: 45%;
+     margin-left: 42%;
 }
 
 .btn-play{
@@ -250,4 +251,59 @@ h3{
      align-items: center;
      gap: 8px;
      justify-content: center;
+}
+.container-community{
+     display: flex;
+     flex-direction: row;
+     text-align: center;
+
+
+
+}
+.event-card{
+
+     display: flex;
+     align-items:start;
+     flex-direction: column;
+     justify-content: flex-start;
+     background-color: white;
+     flex: 1;
+     border: 1px solid ;
+     border-radius: 20px;
+     margin: 40px;
+     padding: 20px;
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+     border-color: aliceblue;
+
+}
+.event-card button{
+     background-color:rgb(41, 170, 127);
+     padding: 8px;
+     border-radius: 20px;
+     border: 1px solid;  
+     color: aliceblue;
+     margin-top: auto;
+     align-self: flex-end;
+     
+}
+
+.date{
+     background-color: rgb(225, 246, 230);
+     color:rgb(72, 194, 72);
+     padding: 5px;
+     border-radius: 50px;
+     border: 0px solid;
+
+
+}
+.event-card h3{
+     margin-top: 0%;
+     margin-bottom: 8px;
+
+     
+}
+.event-card p{
+
+     margin-top: auto;
+     margin-bottom: 8px;
 }
