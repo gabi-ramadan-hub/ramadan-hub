@@ -9,8 +9,41 @@
 <body>
     <main>
 
-
+        <header class="site-header">
+            <a href="#home" class="brand" aria-label="Ramadan Hub home">
+                <span class="crescent" aria-hidden="true">☾</span>
+                <span>Ramadan<br />Hub</span>
+            </a>
         
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#prayer-times">Prayer Times</a>
+                <a href="#quran">Quran</a>
+                <a href="#mosques">Mosques</a>
+                <a href="#community">Community</a>
+            </nav>
+        
+            <div class="header-actions">
+                <button class="theme-toggle" type="button" aria-label="Toggle theme">◐</button>
+                <button class="sign-in" type="button">Sign In</button>
+        
+                <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                    aria-controls="mobile-menu">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        
+            <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation" hidden>
+                <a href="#home">Home</a>
+                <a href="#prayer-times">Prayer Times</a>
+                <a href="#quran">Quran</a>
+                <a href="#mosques">Mosques</a>
+                <a href="#community">Community</a>
+                <button class="sign-in" type="button">Sign In</button>
+            </nav>
+        </header>
+
 
         <!--this is hero section-->
 
@@ -151,6 +184,91 @@
 
         </section>
 
+        <!-- Mosque Finder Section -->
+        
+        <section class="mosques-section" id="mosques">
+            <div class="section">
+        
+                <h2>Find Nearby Mosques</h2>
+                <p class="subtitle">
+                    Locate mosques in your area for prayers and community
+                </p>
+        
+                <div class="mosque-layout">
+        
+                    <aside class="mosque-list">
+        
+                        <form id="location-form" class="location-form">
+                            <label class="sr-only" for="location-search">
+                                Search location
+                            </label>
+        
+                            <input id="location-search" type="search" placeholder="Enter city or postcode..."
+                                autocomplete="postal-code" />
+        
+                            <button type="submit">Search</button>
+                        </form>
+        
+                        <button class="use-location" id="use-location" type="button">
+                            ⌖ Use my current location
+                        </button>
+        
+                        <p id="location-status" class="location-status" aria-live="polite">
+                            Showing mosques near Chicago, IL
+                        </p>
+        
+                        <div id="mosque-results">
+        
+                            <article>
+                                <h3>Central Mosque</h3>
+                                <p>123 Islamic Street</p>
+        
+                                <span>
+                                    ★★★★★ <b>1.2 km away</b>
+                                </span>
+        
+                                <a href="https://www.openstreetmap.org" target="_blank" rel="noreferrer">
+                                    Directions →
+                                </a>
+                            </article>
+        
+                            <article>
+                                <h3>Community Islamic Center</h3>
+                                <p>456 Prayer Avenue</p>
+        
+                                <span>
+                                    ★★★★★ <b>2.5 km away</b>
+                                </span>
+        
+                                <a href="https://www.openstreetmap.org" target="_blank" rel="noreferrer">
+                                    Directions →
+                                </a>
+                            </article>
+        
+                        </div>
+
+                    </aside>
+        
+                    <div class="map-wrap">
+        
+                        <iframe id="map" class="map" title="Nearby mosque map" loading="lazy"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=-87.68%2C41.86%2C-87.58%2C41.92&amp;layer=mapnik&amp;marker=41.89%2C-87.63"></iframe>
+        
+                        <a class="map-link" id="map-link"
+                            href="https://www.openstreetmap.org/?mlat=41.89&amp;mlon=-87.63#map=13/41.89/-87.63" target="_blank"
+                            rel="noreferrer">
+                            Open larger map ↗️
+                        </a>
+        
+                    </div>
+        
+                </div>
+        
+            </div>
+        </section>
+
+
+
     
         <section>
 
@@ -198,7 +316,55 @@
 
 
 
+
+
     </main>
+
+    <!-- Footer -->
+    
+    <footer class="site-footer">
+    
+        <div class="footer-grid">
+    
+            <div>
+                <a href="#home" class="brand">
+                    <span class="crescent" aria-hidden="true">☾</span>
+                    <span>Ramadan<br />Hub</span>
+                </a>
+    
+                <p>
+                    Your complete companion for the blessed month of Ramadan.
+                </p>
+            </div>
+    
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#prayer-times">Prayer Times</a>
+                <a href="#quran">Quran</a>
+                <a href="#mosques">Find Mosque</a>
+                <a href="#community">Community</a>
+            </div>
+    
+            <div>
+                <h3>Resources</h3>
+                <a href="#about">About Us</a>
+                <a href="#blog">Blog</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </div>
+    
+            <div>
+                <h3>Connect</h3>
+                <p class="socials">● &nbsp; ♥️ &nbsp; ◉ &nbsp; ▣</p>
+            </div>
+    
+        </div>
+    
+        <p class="copyright">
+            © 2026 Ramadan Hub. All rights reserved.
+        </p>
+    
+    </footer>
 
 
 
